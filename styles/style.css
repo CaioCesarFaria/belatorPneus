@@ -1,0 +1,277 @@
+/* * Layout e programação desenvolvido por GAIA Desenvolvimento Web & UX/UI Design */
+
+
+/* ? Definindo variáveis fixas */
+
+:root {
+    --roxo-principal: #3F007D;
+    --roxo-secundario: #9C4AEC;
+    --verde-whatsapp: #2AA81A;
+    --branco-fundo: #ffffff;
+    --fonte-principal: "Inter", sans-serif;
+    --preto-principal: #1D1B20;
+
+
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-principal);
+}
+a:any-link {
+    text-decoration: none;
+}
+
+/* ! ================ MOBILE / 490 PX ================================ */
+
+
+@media screen and (max-width: 490px){
+    .header {
+        background-image: url("../assets/bg1.png");
+        width: 100vw;
+        height: 210px;
+    }
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .logo_header {
+        width: 40vw;
+        padding-top: 10px;
+    }
+    
+    
+
+    .whatsapp-button, .phone-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2AA81A; /* Cor verde do WhatsApp */
+        color: #fff;
+        border-radius: 50px; /* Arredonda os cantos */
+        border: none;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        height: 27px;
+        
+    }
+
+    .whatsapp-icon, .phone-icon {
+        width: 38px; /* Ajustar o tamanho do ícone conforme necessário */
+        height: 38px;
+        margin-left: -12px; /* Espaço entre o ícone e o texto */
+        margin-bottom: -5px;
+        align-self: center;
+        
+    }
+
+    .phone-button {
+        background-color: #ffffff; /* Cor azul do ícone do telefone */
+        color: #1E1E1E;
+    }
+
+    /* ? ########################   MENU MOBILE   ########################### */
+    .container_menu {
+        width: 100%;
+        background-image: linear-gradient(to bottom, #9C4AEC 0%, #592A86 93%);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+    }
+    .menu_itens {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 14px;
+        
+    }
+    .menu_itens p {
+        line-height: 140%;
+        color: #FFFFFF ;
+    }
+
+    /* ? ########################   BANNER PNEU BARATO   ########################### */
+    .banner_pneu_barato {
+        width: 100%;
+    }
+    .pneu_barato_chamada {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 96px;
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+    .pneu_barato_chamada h3 {
+        width: 45vw;
+        color: var(--roxo-principal);
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 123%;
+    }
+    .pneu_barato_chamada span{
+        color: var(--roxo-secundario);
+    }
+    .pneu_barato_chamada img{
+        width: 45vw;
+    }
+    .pneu_banner_1 {
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    /* ? ########################   PROMOÇÕES   ########################### */
+    .container_promocoes {
+        width: 100%;
+    }
+    .promocoes_titulo {
+        color: var(--roxo-principal);
+        font-size: 38px;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px #000000;
+        text-align: center;
+    }
+    .container_itens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .container_itens img {
+        padding-bottom: 1.5rem;
+    }
+
+
+    .container_troca_pneus {
+        display: flex;
+        background-image: url(../assets/bg_2.png);
+        height: 179px;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+        
+    }
+    .logo_troca_pneus {
+        width: 45vw;
+    }
+    .logo_troca_pneus img {
+        width: 40vw;
+        margin-left: 1rem;
+    }
+    .chamada_troca_pneus {
+        display: flex;
+        min-width: 45vw;
+        flex-direction: column;
+        background-color: rgba(63, 0, 125, 0.6);
+        justify-content: center;
+        align-items: center;
+        height: 179px;
+        border-top-left-radius: 50px;
+        padding-left: 1rem;
+    }
+    .chamada_troca_pneus p {
+        color: var(--branco-fundo);
+        font-size: 22px;
+        font-family: var(--fonte-principal);
+        text-align: right;
+        margin-right: 1rem;
+        font-weight: 500;
+    }
+    .chamada_troca_pneus_btn_whatspp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--verde-whatsapp);
+        
+        margin-right: 1rem;
+        border-radius: 50px;
+        z-index: 999;
+        border: 1px solid var(--branco-fundo);
+        column-gap: 10px;
+        
+        height: 28px;
+    }
+    .chamada_troca_pneus_btn_whatspp img {
+        padding-left: 0.5rem;
+    }
+    .chamada_troca_pneus_btn_whatspp p {
+        font-size: 12px;
+        
+        
+    }
+
+    /* ? ########################   PARCELAMENTO EM 12X   ########################### */
+    .container_parcelamento {
+        margin-top: 3rem;
+        background-color: #FFF5F5;
+        height: 260px;
+        background-image: url(../assets/pneu_2.png);
+        background-repeat: no-repeat;
+        background-position: 40vw;
+        background-size: 70vw;
+        background-position-y: 60px;
+        display: flex;
+        
+    }
+    .parcelamento_txt {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        margin-left: 1.5rem;
+    }
+    .parcelamento_txt span {
+        color: var(--roxo-secundario);
+        font-weight: 500px;
+    }
+    .parcelamento_txt h3{
+        font-size: 22px;
+        color: var(--roxo-principal);
+    }
+    .parcelamento_txt h4{
+        font-size: 13px;
+        color: var(--roxo-principal);
+    }
+    .parcelamento_txt h5{
+        font-size: 13px;
+        color: var(--roxo-principal);
+    }
+    
+    .parcelamento_logo img{
+        position: absolute;
+        right: 20px;
+        width: 96px;
+        
+    }
+    .chamada_anapolis {
+        text-align: center;
+        color: var(--roxo-principal);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* ? ########################   SERVIÇOS   ########################### */
+    .titulo_servicos {
+        padding-top: 2rem;
+        color: var(--roxo-principal);
+        text-align: center;
+        font-weight: 900;
+        font-size: 38px;
+    }
+
+    .banner_carro {
+        background-image: url(../assets/bg_2.png);
+        height: 179px;
+        width: 100%;
+        
+    }
+    .banner_carro img {
+        display: flex;
+        margin: 0 auto;
+    }
+}
