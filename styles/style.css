@@ -308,6 +308,8 @@ a:any-link {
         font-weight: 400;
         
     }
+
+    /* ? ########################   VALIAÇÃO DO GOOGLE   ########################### */
     .titulo_avaliacao {
         padding-top: 2rem;
         color: var(--roxo-principal);
@@ -318,5 +320,150 @@ a:any-link {
     }
     .titulo_avaliacao span {
         color: var(--roxo-secundario);
+    }
+
+    .elfsight-app-c07a8da8-5234-4c8c-8250-c435cfb75c7b {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    /* ? ########################   MAPA    ########################### */
+    .logo_texto_belator {
+        width: 100vw;
+        display: flex;
+        
+    }
+    .logo_texto_belator img {
+        margin: 0 auto;
+    }
+
+    .mapa_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ? ########################   BANNER ORÇAMENTO   ########################### */
+
+    .container_orcamento {
+        margin-top: 3rem;
+        width: 100%;
+        background-image: url(../assets/bg_3.png);
+        
+        height: 375px;
+    }
+    .container_orcamento button{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .orcamento_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .orcamento_titulo {
+        font-size: 32px;
+        font-weight: bolder;
+        color: var(--branco-fundo);
+        text-align: center;
+        width: 60vw;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .orcamento_titulo span {
+        color: var(--roxo-secundario);
+    }
+    .botao_zap {
+        padding-top: 1rem;
+    }
+    .endereco {
+        text-align: center;
+        color: var(--branco-fundo);
+        font-size: 14px;
+        padding: 0 2rem;
+        font-family: var(--fonte-principal);
+
+    }
+    .ouligue {
+        color: var(--branco-fundo);
+    }
+    /* ? ########################   BANNER ESTRADA   ########################### */
+    .container_estrada {
+        margin-top: 1rem;
+        width: 100%;
+        background-image: url(../assets/bg_4.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .estrada_titulo {
+        color: var(--branco-fundo);
+        font-size: 36px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 0 2rem;
+        margin: 0;
+        
+    }
+    .estrada_pneus {
+        padding-top: 5.7rem;
+    }
+    .troca_gratis {
+        font-size: 22;
+        font-weight: bolder;
+        color: #FFA800;
+        width: 40vw;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .box_garantia {
+        background-color: rgba(63, 0, 125, 0.6);
+        width: 80vw;
+        justify-content: right;
+
+        border-top-left-radius: 50px;
+        display: flex;
+        
+        
+    }
+    .garantia_txt {
+        font-size: 36px;
+        font-weight: bolder;
+        color: var(--branco-fundo);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        
+        text-align: center;
+
+    
+    }
+    .garantia_txt span {
+        color: #FFA800;
+
+    }
+    /* ? ########################   BANNER MECANICOS   ########################### */
+    .container_mecanicos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mecanicos_img img{
+        width: 60vw;
+    }
+    .mecanicos_txt {
+        font-weight: bolder;
+        color: var(--roxo-principal);
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 0 2rem;
+    }
+    .mecanicos_txt span {
+        color: #ffa800;
     }
 }
