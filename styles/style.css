@@ -470,14 +470,15 @@ a:any-link {
         font-size: 36px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         text-align: center;
-        padding: 0 2rem 3rem 2rem;
+        padding: 0 2rem 0rem 2rem;
 
     }
     .mecanicos_txt span {
         color: #ffa800;
     }
     .mecanicos_pneu {
-        position: absolute;
+        margin: 0;
+        padding: 0;
         
         
     }
@@ -487,8 +488,7 @@ a:any-link {
         justify-content: center;
         align-items: center;
         background: linear-gradient(to bottom, #9C4AEC, #21053E);
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50% ;
+        
         width: 100%;
     }
     .mecanicos_chamada img {
