@@ -68,13 +68,13 @@
     <!-- ! INÍCIO DO MAIN ------------------------------------->
     <main>
       <!-- ##########################  MENU ###################### -->
-      <div class="container_menu">
+      <div class="container_menu" id="inicio">
         <div class="menu_itens">
-          <p>Início</p>
-          <p>Promoções</p>
-          <p>Serviços</p>
-          <p>Localização</p>
-          <p>Contato</p>
+          <p onclick="document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });">Início</p>
+          <p onclick="document.getElementById('promocoes').scrollIntoView({ behavior: 'smooth' });">Promoções</p>
+          <p onclick="document.getElementById('servicos').scrollIntoView({ behavior: 'smooth' });">Serviços</p>
+          <p onclick="document.getElementById('localizacao').scrollIntoView({ behavior: 'smooth' });">Localização</p>
+          <p onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contato</p>
         </div>
       </div>
 
@@ -89,7 +89,7 @@
 
       <!-- ##########################  PROMOÇÕES ###################### -->
 
-      <div class="container_promocoes">
+      <div class="container_promocoes" id="promocoes">
         <p class="promocoes_titulo">Promoções</p>
         <div class="container_itens">
           <a href="https://wa.me/5562993869162" target="_blank">
@@ -150,55 +150,59 @@
         <img src="./assets/carro.png" alt="imagem do motor de um carro"/>
       </div>
 
-      <div class="servicos_tipos">
+      <div class="servicos_tipos" id="servicos">
         <details class="card">
           <summary>Diagnóstico do motor</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Por meio do diagnóstico do motor é possível identificar os problemas que o motor possui ou pode vir a apresentar. Esses problemas variam e aparecem em forma de: dificuldade na partida, sons irregulares, vibrações atípicas, aumento no consumo de combustível ou perda de potência, por exemplo. O scanner automotivo, utilizado na Belator, é um grande aliado nesse diagnóstico.</p>
         </details>
 
         <details class="card">
           <summary>Troca de óleo e filtros</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Trocar o óleo e os filtros regularmente é essencial para manter o motor do veículo funcionando de forma suave e eficiente. É o óleo que lubrifica as peças móveis do motor, reduzindo o atrito e evitando o desgaste prematuro. Esse cuidado prolonga a vida útil, melhora o desempenho e economiza combustível. Na Belator, a troca de óleo e filtros tem preço e condições de pagamento especiais.</p>
         </details>
 
         <details class="card">
           <summary>Limpeza de bico</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Na teoria, os bicos injetores são autolimpantes. Mas a verdade é que, dependendo do combustível utilizado, podem ocorrer problemas de carbonização e o entupimento dos orifícios que pulverizam esse combustível no motor. Assim, o veículo pode apresentar falha na aceleração. A partir daí, os problemas só aumentam. Exceto se você for cliente Belator e realizar as manutenções em dia.</p>
         </details>
 
         <details class="card">
           <summary>Suspensão</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>A estabilidade do veículo e, por consequência, o conforto de quem o utiliza passam pela qualidade da suspensão. Por isso, a manutenção preventiva com os mecânicos experientes e comprometidos da Belator é muito importante. Para aumentar a vida útil da suspensão do seu carro você também pode realizar o rodízio de pneus regularmente e mantê-los na calibragem correta.</p>
         </details>
 
         <details class="card">
           <summary>Pastilhas de freio</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>A segurança da sua família passa pela Belator. Nossa missão é garantir que o seu veículo fique como novo e ofereça segurança, conforto e tranquilidade, seja na cidade, ou na estrada. Para isso, a revisão e a troca periódica das pastilhas de freio é essencial.</p>
         </details>
 
         <details class="card">
           <summary>Alinhamento e balanceamento</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Manter as rodas do seu carro alinhadas e balanceadas aumenta a estabilidade do veículo, a segurança geral e a vida útil dos pneus. Na Belator, o alinhamento e o balanceamento são realizados com o auxílio da mais alta tecnologia, para garantir um resultado preciso e mais duradouro.</p>
         </details>
 
         <details class="card">
           <summary>Pneus</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>A Belator tem pneus nacionais e importados com os melhores preços de Anápolis. São pneus do aro 13 ao 24 com 5 anos de garantia e em até 12x sem juros nos cartões.
+            A troca é gratuita, isso mesmo, a troca é por nossa conta, enquanto você aproveita um café quentinho na nossa sala de espera climatizada.
+            </p>
         </details>
 
         <details class="card">
           <summary>Revisão completa</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Durante a revisão do veículo, os profissionais da Belator analisam componentes essenciais para o bom funcionamento como motor, freios, embreagem, escapamento, sistema elétrico, mangueiras, velas, vedação, ar condicionado e pneus.  
+            A revisão periódica melhora o consumo de combustível, diminui despesas com problemas inesperados e aumenta a vida útil das peças. E o melhor, na Belato você pode dividir tudo em até 12x sem juros. 
+            </p>
         </details>
 
         <details class="card">
           <summary>Escapamento</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Quer melhorar a potência do motor do seu carro e diminuir o consumo de combustível? Cuide bem do escapamento! Passe na Belator e faça manutenções a cada três meses. Nossos mecânicos vão verificar todo o sistema em busca de corrosão, buracos, desgaste anormal dos componentes, braçadeiras soltas, vazamentos e qualquer outro problema que possa comprometer o desempenho e a segurança do seu veículo.</p>
         </details>
 
         <details class="card">
           <summary>Amortecedor</summary>
-          <p>Este produto é incrível! Ele possui as seguintes características:</p>
+          <p>Sabia que a recomendação é trocar os amortecedores a cada 40 mil quilômetros rodados? Eles são essenciais para uma boa dirigibilidade, responsáveis por manter o contato dos pneus com o solo e proporcionar conforto, estabilidade e segurança ao seu veículo. Na Belator, serviços, como a troca de amortecedores, têm 6 meses de garantia.</p>
         </details>
       </div>
       <!-- ##########################  AVALIAÇÕES ###################### -->
@@ -212,13 +216,13 @@
       
 
       <!-- ##########################  MAPA ###################### -->
-      <div class="mapa_container">
+      <div class="mapa_container" id="localizacao">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15316.553303420633!2d-48.957582401110855!3d-16.315874916881448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea591d277deef%3A0x6b34062b9cb9f8bb!2sBelator%20Pneus!5e0!3m2!1spt-BR!2sbr!4v1722978186275!5m2!1spt-BR!2sbr" width="90%" height="300" style="margin-top: 1.5rem; border:1px solid #3f007d; border-radius: 14px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       
       <!-- ##########################  BANNER ORÇAMENTO FOOTER ###################### -->
 
-      <div class="container_orcamento">
+      <div class="container_orcamento" id="contato">
         <div class="orcamento_banner">
           <h4 class="orcamento_titulo">Faça um <span>orçamento</span> agora mesmo.</h4>
 
@@ -252,7 +256,7 @@
         <p class="estrada_titulo">Sua loja de pneus novos em Anápolis.</p>
         <p class="troca_gratis">Troca grátis na hora da compra.</p>
         <div class="box_garantia">
-          <p class="garantia_txt">Pneus <span>nacionais</span> e <span>importados</span> com garantia de <br>até <span>5 anos</span>.</p>
+          <p class="garantia_txt">Pneus <span>nacionais</span> e <span>importados</span> com garantia de até <span>5 anos</span>.</p>
         </div>
       </div>
 
@@ -261,8 +265,9 @@
        <div class="container_mecanicos">
         <div class="mecanicos_img">
           <img src="./assets/mecanico1.png" alt="Ilustração de um mecânico com uma ferramenta"/>
+          <p class="mecanicos_txt">Mecânicos <span>experientes</span> e compromisso com a sua satisfação.</p>
         </div>
-        <p class="mecanicos_txt">Mecânicos <span>experientes</span> e compromisso com a sua satisfação.</p>
+        
         <div class="mecanicos_pneu">
           <img src="./assets/pneu_4.png" alt="Foto de 4 pneus um ao lado do outro"/>
         </div>
@@ -288,7 +293,7 @@
         <p class="redes_chamada"><span>Condições</span>  e <span>preços especiais</span> para o mês vigente, mediante troca na loja dos pneus que estão no
           veículo. </p>
         <p class="ilustrativa">Imagens meramente ilustrativas.</p>
-        <img class="pneu_float" src="./assets/pneu_5.png" alt="Foto com 5 pneus vistos de frente">
+        <img class="pneu_float" src="./assets/bg_teste.png" alt="Foto com 5 pneus vistos de frente">
         <div class="redes_banner">
           
         </div>
