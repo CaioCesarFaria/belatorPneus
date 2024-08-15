@@ -283,13 +283,15 @@ a:any-link {
     .servicos_tipos {
         margin-top: 7rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         column-gap: 0.8rem;
+        width: 100%;
     }
     
     .card {
-        width: 40%;
+        width: 80%;
         background-color: var(--fundo-card);
         margin-bottom: 1rem;
         border: 2px solid var(--roxo-principal);
@@ -602,6 +604,45 @@ a:any-link {
     .copyright a {
         color: var(--roxo-principal);
     }
+    .whatsapp-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        background-color: #25d366; /* Verde WhatsApp */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      
+      .whatsapp-floating i {
+        font-size: 28px;
+      }
+      .phone-floating {
+        position: fixed;
+        bottom: 90px; /* Ajuste a posição vertical se necessário */
+        right: 50px;
+        background-color: #333; /* Cor de fundo do botão */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      .phone-floating i {
+        font-size: 28px;
+      }
+      
+      
 }
 
 /* ! ================ NOTEBOOK E PC / 1024 PX ================================ */
@@ -870,13 +911,15 @@ a:any-link {
     .servicos_tipos {
         margin-top: 7rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
         justify-content: center;
+        align-items: center;
         column-gap: 0.8rem;
     }
     
     .card {
-        width: 40%;
+        width: 50%;
         background-color: var(--fundo-card);
         margin-bottom: 1rem;
         border: 2px solid var(--roxo-principal);
@@ -885,6 +928,13 @@ a:any-link {
         padding: 0.5rem;
         
         
+    }
+    .card p {
+        display: none; /* Esconde o conteúdo por padrão */
+      }
+      
+    details[open] p {
+        display: block; /* Exibe o conteúdo quando o details está aberto */
     }
     
     summary {
@@ -1205,4 +1255,689 @@ a:any-link {
     .copyright a {
         color: var(--roxo-principal);
     }
+    .whatsapp-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        background-color: #25d366; /* Verde WhatsApp */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      
+      .whatsapp-floating i {
+        font-size: 28px;
+      }
+      .phone-floating {
+        position: fixed;
+        bottom: 90px; /* Ajuste a posição vertical se necessário */
+        right: 50px;
+        background-color: #333; /* Cor de fundo do botão */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      .phone-floating i {
+        font-size: 28px;
+      }
+}
+
+/* ! ======== DESKTOP TELAS GRANDES / 1201 px ================ */
+
+@media screen and (min-width: 1201px) {
+    .header {
+        background-image: url("../assets/bg1.png");
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .logo_header {
+        width: 20vw;
+        padding-top: 10px;
+    }
+    
+    
+
+    .whatsapp-button, .phone-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2AA81A; /* Cor verde do WhatsApp */
+        color: #fff;
+        border-radius: 50px; /* Arredonda os cantos */
+        border: none;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        height: 35px;
+        padding-right: 1.5rem;
+        
+    }
+
+    .whatsapp-icon, .phone-icon {
+        width: 50px; /* Ajustar o tamanho do ícone conforme necessário */
+        height: 50px;
+        margin-left: -12px; /* Espaço entre o ícone e o texto */
+        margin-bottom: -5px;
+        align-self: center;
+        
+    }
+
+    .phone-button {
+        background-color: #ffffff; /* Cor azul do ícone do telefone */
+        color: #1E1E1E;
+        margin-bottom: 2rem;
+    }
+    /* ? ########################   MENU desktop   ########################### */
+    .container_menu {
+        width: 100vw;
+        background-image: linear-gradient(to bottom, #9C4AEC 0%, #592A86 93%);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+        position: sticky;
+        top: 0; /* Define o ponto de fixação como o topo da viewport */
+        z-index: 999; /* Garante que o menu fique acima de outros elementos */
+
+    }
+    .menu_itens {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+        
+    }
+    .menu_itens p {
+        line-height: 140%;
+        color: #FFFFFF ;
+    }
+
+    /* ? ########################   BANNER PNEU BARATO   ########################### */
+    .banner_pneu_barato {
+        width: 100%;
+    }
+    .pneu_barato_chamada {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 96px;
+        padding-top: 4rem;
+        padding-bottom: 0;
+        column-gap: 1rem;
+        
+    }
+    .pneu_barato_chamada h3 {
+        width: 45vw;
+        color: var(--roxo-principal);
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 110%;
+        margin-left: 6rem;
+    }
+    .pneu_barato_chamada span{
+        color: var(--roxo-secundario);
+    }
+    .pneu_barato_chamada img{
+        width: 40vw;
+        margin-right: 2rem;
+    }
+    .pneu_banner_1 {
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    /* ? ########################   PROMOÇÕES   ########################### */
+    .container_promocoes {
+        width: 100%;
+    }
+    .promocoes_titulo {
+        color: var(--roxo-principal);
+        font-size: 52px;
+        font-weight: bolder;
+        text-shadow: 0px 1px 4px #000000;
+        text-align: center;
+    }
+    .container_itens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .container_itens img {
+        padding-bottom: 1.5rem;
+    }
+    /* ? ########################   BANNER TROCA DE PNEUS   ########################### */
+    .container_troca_pneus {
+        display: flex;
+        background-image: url(../assets/bg_2.png);
+        height: 179px;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+        background-size: cover;
+        
+    }
+    .logo_troca_pneus {
+        width: 45vw;
+    }
+    .logo_troca_pneus img {
+        width: 30vw;
+        margin-left: 1rem;
+    }
+    .chamada_troca_pneus {
+        display: flex;
+        min-width: 45vw;
+        flex-direction: column;
+        background-color: rgba(63, 0, 125, 0.9);
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding-left: 1rem;
+    }
+    .chamada_troca_pneus p {
+        color: var(--branco-fundo);
+        font-size: 26px;
+        font-family: var(--fonte-principal);
+        text-align: right;
+        margin-right: 1rem;
+        font-weight: 500;
+    }
+    .chamada_troca_pneus_btn_whatspp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--verde-whatsapp);
+        
+        margin-right: 1rem;
+        border-radius: 50px;
+        z-index: 999;
+        border: 1px solid var(--branco-fundo);
+        column-gap: 10px;
+        
+        height: 28px;
+    }
+    .chamada_troca_pneus_btn_whatspp img {
+        padding-left: 0.5rem;
+    }
+    .chamada_troca_pneus_btn_whatspp p {
+        font-size: 16px;
+        
+        
+    }
+    /* ? ########################   PARCELAMENTO EM 12X   ########################### */
+    .container_parcelamento {
+        margin-top: 3rem;
+        background-color: #FFF5F5;
+        height: 350px;
+        background-image: url(../assets/pneu_2.png);
+        background-repeat: no-repeat;
+        background-position: 50vw;
+        background-size: 50vw;
+        background-position-y: 60px;
+        display: flex;
+        
+    }
+    .parcelamento_txt {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        margin-left: 1.5rem;
+    }
+    .parcelamento_txt span {
+        color: var(--roxo-secundario);
+        font-weight: 500px;
+    }
+    .parcelamento_txt h3{
+        font-size: 28px;
+        color: var(--roxo-principal);
+    }
+    .parcelamento_txt h4{
+        font-size: 24px;
+        color: var(--roxo-principal);
+    }
+    .parcelamento_txt h5{
+        font-size: 24px;
+        color: var(--roxo-principal);
+    }
+    
+    .parcelamento_logo img{
+        position: absolute;
+        right: 20px;
+        width: 150px;
+        
+    }
+    .chamada_anapolis {
+        text-align: center;
+        color: var(--roxo-principal);
+        font-size: 22px;
+        font-weight: bold;
+        
+    }
+    /* ? ########################   SERVIÇOS   ########################### */
+    .titulo_servicos {
+        padding-top: 2rem;
+        color: var(--roxo-principal);
+        text-align: center;
+        font-weight: 900;
+        font-size: 38px;
+    }
+
+    .banner_carro {
+        background-image: url(../assets/bg_2.png);
+        height: 179px;
+        width: 100%;
+        
+    }
+    .banner_carro img {
+        display: flex;
+        margin: 0 auto;
+        
+    }
+    .servicos_tipos {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.8rem;
+    }
+    
+    .card {
+        width: 50%;
+        background-color: var(--fundo-card);
+        margin-bottom: 1rem;
+        border: 2px solid var(--roxo-principal);
+        border-radius: 12px;
+        display: flex;
+        padding: 0.5rem;
+        
+        
+    }
+    .card p {
+        display: none; /* Esconde o conteúdo por padrão */
+      }
+      
+    details[open] p {
+        display: block; /* Exibe o conteúdo quando o details está aberto */
+    }
+    
+    summary {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--roxo-principal);
+    }
+    
+    .card p {
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+
+    /* ? ########################   VALIAÇÃO DO GOOGLE   ########################### */
+    .titulo_avaliacao {
+        padding-top: 2rem;
+        color: var(--roxo-principal);
+        text-align: center;
+        font-weight: 900;
+        font-size: 38px;
+        margin: 1rem 4rem;
+    }
+    .titulo_avaliacao span {
+        color: var(--roxo-secundario);
+    }
+
+    .elfsight-app-c07a8da8-5234-4c8c-8250-c435cfb75c7b {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* ? ########################   MAPA    ########################### */
+    .logo_texto_belator {
+        width: 100vw;
+        display: flex;
+        
+    }
+    .logo_texto_belator img {
+        margin: 0 auto;
+    }
+
+    .mapa_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ? ########################   BANNER ORÇAMENTO   ########################### */
+
+    .container_orcamento {
+        margin-top: 3rem;
+        width: 100%;
+        background-image: url(../assets/bg_3.png);
+        
+        height: 375px;
+    }
+    .container_orcamento img {
+        width: 120px;
+    }
+    .container_orcamento button{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .orcamento_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .orcamento_titulo {
+        font-size: 32px;
+        font-weight: bolder;
+        color: var(--branco-fundo);
+        text-align: center;
+        width: 60vw;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .orcamento_titulo span {
+        color: var(--roxo-secundario);
+    }
+    .botao_zap {
+        padding-top: 1rem;
+    }
+    .endereco {
+        text-align: center;
+        color: var(--branco-fundo);
+        font-size: 16px;
+        padding: 0 2rem;
+        font-family: var(--fonte-principal);
+
+    }
+    .ouligue {
+        color: var(--branco-fundo);
+    }
+    /* ? ########################   BANNER ESTRADA   ########################### */
+    .container_estrada {
+        margin-top: 1rem;
+        width: 100%;
+        background-image: url(../assets/bg_4.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position-y: center;
+    }
+    .estrada_logo img {
+        width: 30vw;
+    }
+    .estrada_titulo {
+        color: var(--branco-fundo);
+        font-size: 36px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 0 2rem;
+        margin: 0;
+        
+    }
+    .estrada_pneus {
+        padding-top: 5.7rem;
+    }
+    .estrada_pneus img {
+        width: 400px;
+    }
+    .troca_gratis {
+        font-size: 26px;
+        font-weight: bolder;
+        color: #FFA800;
+        width: 40vw;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .box_garantia {
+        background-color: rgba(63, 0, 125, 0.6);
+        width: 80vw;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        display: flex;
+        
+        
+    }
+    .garantia_txt {
+        font-size: 36px;
+        font-weight: bolder;
+        color: var(--branco-fundo);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        padding-inline: 3.5rem;
+        text-align: center;
+
+    
+    }
+    .garantia_txt span {
+        color: #FFA800;
+
+    }
+    /* ? ########################   BANNER MECANICOS   ########################### */
+    .container_mecanicos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+    .mecanicos_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 2rem 0 2rem;
+    }
+    .mecanicos_img img{
+        width: 30vw;
+        
+    }
+    .mecanicos_txt {
+        font-weight: bolder;
+        color: var(--roxo-principal);
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 1rem 3rem 1rem 3rem;
+
+    }
+    .mecanicos_txt span {
+        color: #ffa800;
+    }
+    .mecanicos_pneu img {
+        width: 60vw;
+        
+        
+    }
+    .mecanicos_chamada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #9C4AEC, #21053E);
+        row-gap: 1rem;
+        width: 100%;
+    }
+    .mecanicos_chamada img {
+        width: 200px;
+        padding-bottom: 3rem;
+    }
+    .chamada_barato {
+        color: var(--branco-fundo);
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding-top: 3rem;
+        width: 80vw;
+        margin: 0;
+        
+    }
+    .chamada_aro {
+        font-size: 26px;
+        color: var(--branco-fundo);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 0 2rem 2rem 2rem;
+        margin: 0;
+    }
+    .chamada_aro span {
+        color: #ffa800;
+        
+    }
+    /* ? ########################   BANNER REDES SOCIAIS   ########################### */
+    .container_redessociais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes_titulo {
+        color: var(--roxo-principal);
+        font-size: 35px;
+        font-weight: bolder;
+        padding-inline: 2rem;
+        text-align: center;
+    }
+    .redes_icones {
+        display: flex;
+        column-gap: 2rem;
+    }
+    .redes_chamada {
+        color: var(--roxo-principal);
+        font-size: 23px;
+        text-align: center;
+        padding-inline: 1.8rem;
+        padding-top: 4.5rem;
+        padding-bottom: 1rem;
+        margin: 0 4rem;
+
+    }
+    .redes_chamada span {
+        font-weight: bold;
+    }
+    .ilustrativa {
+        font-size: 12px;
+        color: var(--roxo-principal);
+        
+    }
+    
+    .pneu_float {
+        
+        width: 100%;
+        
+        
+    }
+    /* ? ########################   BANNER REDES SOCIAIS   ########################### */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .logo_footer {
+        width: 30vw;
+        margin: 0 auto;
+    }
+    .footer_titulo {
+        color: var(--roxo-principal);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .box_politicas {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+        border-top: 1px solid #d9d9d9;
+        width: 100vw;
+        justify-content: center;
+        row-gap: 0.5rem;
+        padding-top: 1.5rem;
+        
+
+    }
+    .box_politicas p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .copyright {
+        color: var(--roxo-principal);
+        text-align: center;
+        font-size: 15px;
+        padding-top: 2rem;
+    }
+    .copyright a {
+        color: var(--roxo-principal);
+    }
+    .whatsapp-floating {
+        position: fixed;
+        bottom: 20px;
+        right: 50px;
+        background-color: #25d366; /* Verde WhatsApp */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      
+      .whatsapp-floating i {
+        font-size: 28px;
+      }
+      .phone-floating {
+        position: fixed;
+        bottom: 90px; /* Ajuste a posição vertical se necessário */
+        right: 50px;
+        background-color: #333; /* Cor de fundo do botão */
+        color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 999;
+      }
+      .phone-floating i {
+        font-size: 28px;
+      }
 }
